@@ -120,9 +120,7 @@ Validação de dados replicados
 
 👩‍💻 Autora
 
-Tatiana kamioka
+Tatiana Kamioka Lima
 
-Tatiana Lima
-
-Estudante de Ciência da Computação  
+Estudante de Ciência da Computação
 Interesse em Engenharia de Dados e Análise de Dados
