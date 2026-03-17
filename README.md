@@ -3,7 +3,7 @@ Data Replication Lab — MySQL → SQL Server using Qlik Replicate
 
 Este projeto demonstra a criação de uma pipeline de replicação de dados utilizando Qlik Replicate, replicando dados de um banco MySQL para Microsoft SQL Server.
 
-O objetivo do laboratório foi compreender como configurar endpoints, criar tarefas de replicação e monitorar a transferência de dados entre bancos heterogêneos.
+O objetivo deste laboratório foi compreender como configurar endpoints, criar tarefas de replicação e monitorar a transferência de dados entre bancos heterogêneos.
 
 🏗️ Arquitetura da Replicação
 
@@ -123,4 +123,4 @@ Validação de dados replicados
 Tatiana Kamioka
 
 Estudante de Ciência da Computação
-Interesse em Engenharia de Dados e Análise de Dados
+Foco em Engenharia de Dados e Análise de Dados
