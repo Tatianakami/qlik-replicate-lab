@@ -21,7 +21,6 @@ Qlik Replicate (Replication Task)
 SQL Server (Target Endpoint)
 
 
-![Monitoramento](./imagens/replicate-monitor.png)
 
 🧰 Tecnologias Utilizadas
 
@@ -51,6 +50,8 @@ Task Name: replicate_mysql_sqlserver
 Replication Profile: Unidirectional
 Task Option: Full Load
 📊 Monitoramento da Replicação
+
+![Monitoramento](./imagens/replicate-monitor.png)
 
 Após iniciar a tarefa, o progresso foi acompanhado na aba Monitor do Qlik Replicate.
 
