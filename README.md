@@ -9,7 +9,9 @@ O objetivo do laboratório foi compreender como configurar endpoints, criar tare
 
 A replicação foi configurada seguindo o fluxo abaixo:
 
+## 🏗️ Arquitetura da Replicação
 
+![Arquitetura](./imagens/architecture.png)
 
 
 Fluxo da pipeline:
@@ -56,6 +58,10 @@ Tabela utilizada para validação da replicação:
 store
 📊 Monitoramento da Replicação
 
+
+
+![Monitoramento](./imagens/replicate-monitor.png)
+
 Após iniciar a replicação, o progresso da tarefa foi acompanhado na aba Monitor do Qlik Replicate Web Console.
 
 Durante o monitoramento foi possível observar:
@@ -74,6 +80,10 @@ Errors (0) confirmando que nenhuma falha ocorreu
 
 
 🔍 Validação dos Dados no MySQL
+
+## 🔍 Validação dos Dados no MySQL
+
+![Consulta MySQL](./imagens/mysql-query.png)
 
 Para validar os dados na origem foi executada a seguinte consulta no MySQL Workbench:
 
