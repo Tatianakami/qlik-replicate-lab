@@ -1,13 +1,24 @@
-Data Replication Lab — MySQL → SQL Server using Qlik Replicate
-📌 Overview
+# 🔄 Pipeline de Replicação de Dados (MySQL → SQL Server com Qlik Replicate)
 
-Este projeto demonstra a criação de uma pipeline de replicação de dados utilizando Qlik Replicate, replicando dados de um banco MySQL para Microsoft SQL Server.
+## 📝 Sobre o Projeto
 
-O objetivo do laboratório foi compreender como configurar endpoints, criar tarefas de replicação e monitorar a transferência de dados entre bancos heterogêneos.
+Projeto de engenharia de dados focado na criação de uma pipeline de replicação utilizando Qlik Replicate.
 
-🏗️ Arquitetura da Replicação
+O objetivo foi integrar dados entre MySQL (origem) e SQL Server (destino), garantindo transferência eficiente, consistente e monitorada entre bancos de dados heterogêneos.
 
-A replicação foi configurada seguindo o fluxo abaixo:
+---
+
+## 🏗️ Arquitetura da Solução
+
+Fluxo da pipeline:
+
+MySQL (Source)  
+↓  
+Qlik Replicate (Task de Replicação)  
+↓  
+SQL Server (Target)
+
+---
 
 
 ![Arquitetura](./imagens/architecture.png)
@@ -22,84 +33,56 @@ SQL Server (Target Endpoint)
 
 
 
-🧰 Tecnologias Utilizadas
+## 💻 Tecnologias Utilizadas
 
-Qlik Replicate
+- Qlik Replicate  
+- MySQL  
+- SQL Server  
+- MySQL Workbench  
 
-MySQL
-
-Microsoft SQL Server
-
-MySQL Workbench
+---
 
 ![Consulta MySQL](./imagens/mysql-query.png)
 
-⚙️ Etapas da Implementação
+## ⚙️ Implementação
 
-Criação do Source Endpoint (MySQL)
+- Configuração do Source Endpoint (MySQL)  
+- Configuração do Target Endpoint (SQL Server)  
+- Criação da tarefa de replicação  
+- Seleção de tabelas do schema *sakila*  
+- Execução com estratégia **Full Load**  
 
-Criação do Target Endpoint (SQL Server)
-
-Criação da Replication Task
-
-Seleção das tabelas do schema sakila
-
-Configuração da task:
-
-Task Name: replicate_mysql_sqlserver
-Replication Profile: Unidirectional
-Task Option: Full Load
+---
 📊 Monitoramento da Replicação
 
 ![Monitoramento](./imagens/replicate-monitor.png)
 
-Após iniciar a tarefa, o progresso foi acompanhado na aba Monitor do Qlik Replicate.
+## 📊 Monitoramento
 
-Durante o monitoramento foi possível observar:
+A replicação foi acompanhada via painel do Qlik Replicate, permitindo observar:
 
-Total Completion (100%)
+- Progresso da carga (100% concluído)  
+- Tabelas processadas  
+- Taxa de transferência (throughput)  
+- Ausência de erros  
 
-Completed Tables
+## ✅ Resultado
 
-Loading Tables
+- Integração bem-sucedida entre MySQL e SQL Server  
+- Replicação completa dos dados  
+- Garantia de consistência entre origem e destino  
+- Monitoramento eficiente da pipeline  
 
-Throughput (velocidade de transferência)
+---
 
-Errors (0)
+## 🎯 Diferencial do Projeto
 
+Este projeto demonstra na prática a construção de pipelines de integração de dados, abordando conceitos essenciais de engenharia de dados como replicação, integração entre sistemas e confiabilidade na transferência de dados.
 
+---
 
+## 🧑‍💻 Autora
 
-🔍 Validação dos Dados no MySQL
-
-Consulta executada no MySQL Workbench:
-
-SELECT * FROM sakila.store;
-
-Resultado retornado:
-
-store_id	manager_staff_id	address_id	last_update
-1	1	1	2006-02-15
-2	2	2	2006-02-15
-
-
-
-
-✅ Resultado
-
-A replicação foi executada com sucesso demonstrando:
-
-Conexão entre MySQL e SQL Server
-
-Execução da replicação utilizando Full Load
-
-Monitoramento da tarefa
-
-Transferência correta dos dados entre os bancos
-
-👩‍💻 Autora
-
-Tatiana Kamioka
-
-Estudante de Ciência da Computação
-Interesse em Engenharia de Dados e Análise de Dados
+Tatiana Kamioka  
+🔗 LinkedIn: https://linkedin.com/in/tatiana-kami  
+🔗 GitHub: https://github.com/Tatianakami
